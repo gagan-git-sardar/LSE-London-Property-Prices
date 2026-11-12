@@ -70,6 +70,9 @@ If you want, I can add a quick cell to fit these splits and compare RMSE/MAE so 
 
 ## Experiment 004
 
+**Limitation**
+- This experiment, in reality, presents leakage. The segmentation thresholds were decided based on optimising the test metric on 2024 data, which is our test data. Segmentation thresholds should have been decided from optimising the last val fold.
+
 **Change**
 - Three segmented models based on train data evaluation:
 <= £250k, £250k–£1.1m, > £1.1m
